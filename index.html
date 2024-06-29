@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+
+    *{
+
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+body{
+
+    background-color: aqua;
+    animation: sky;
+    animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.img{
+
+    margin-top: 120px
+}
+.con{
+    display: flex;
+    position: relative;
+}
+.sun{
+
+    width: 120px;
+    height: 120px;
+    background-color: orange;
+    border-radius: 50%;
+    margin-left: 320px;
+    margin-top: 40px;
+    animation: sun;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: */
+    /* animation-direction:normal; */
+    animation-fill-mode: forwards;
+}
+
+.moon{
+
+    width: 120px;
+    height: 120px;
+    background: transparent;
+    border-radius: 50%;
+ 
+    margin-top: 40px;
+    animation: moon;
+    animation-duration: 0.5s;
+    animation-delay: 9s;
+    animation-timing-function: linear;
+    position: absolute;
+    top: 30px;
+    left: 900px;
+    opacity: 0;
+    
+  animation-fill-mode: forwards;
+  box-shadow: -30px 20px white;
+
+   
+
+}
+
+
+
+@keyframes sun{
+
+    from{
+
+        transform: translateY(10px);
+    }
+
+    to{
+
+        transform: translateY(900px);
+      
+    }
+
+   
+
+   
+}
+
+@keyframes sky{
+
+    0%{
+
+background-color:aqua;
+
+}
+
+20%{
+background-color: rgb(245, 189, 87);
+}
+40%{
+background-color: rgb(170, 131, 59);
+}
+60%{ background-color: rgb(113, 85, 23);
+
+}
+80%{ 
+background-color: rgb(120, 90, 31);
+}
+90%{
+
+background-color: rgb(108, 82, 10);
+}
+100%{
+
+    background-color: rgb(55, 53, 53);
+}
+
+
+}
+@keyframes moon{
+
+    100%{
+
+      opacity: 1;
+    }
+}
+
+
+
+
+
+ 
+ 
+
+   </style>
+
+
+</head>
+<body>
+
+    <div class="con">
+
+      <img src="homepng.png" alt="" class="img">
+
+      <div class="sun"></div>
+      <div class="moon"></div>
+
+    </div>
+    
+</body>
+</html>
